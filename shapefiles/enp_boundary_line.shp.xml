@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<metadata>
+	<idinfo>
+		<citation>
+			<citeinfo>
+				<origin>Danelle Malget, Colorado State University, National Park Service</origin>
+				<pubdate>11/01/02</pubdate>
+				<title>Everglades National Park Boundary</title>
+				<geoform Sync="TRUE">vector digital data</geoform>
+				<onlink>http://www.nps.gov/gis/metadata/waso/nps_boundary.html</onlink>
+				<ftname Sync="TRUE">enp_boundary_line</ftname><onlink>ftp://ftp.ncsu.edu/pub/unity/lockers/ftp/npsftp/pub/data/waso/nps_boundary.e00</onlink></citeinfo>
+		</citation>
+		<descript>
+			<abstract>The Everglades National Park boundary is a subset of the National Park Service - Park Boundaries dataset.</abstract>
+			<purpose>Everglades National Park boundary set for display and general analysis purposes.</purpose>
+			<langdata Sync="TRUE">en</langdata></descript>
+		<timeperd>
+			<timeinfo>
+				<rngdates>
+					<begdate>20020201</begdate>
+					<begtime>unknown</begtime>
+					<enddate>20030301</enddate>
+					<endtime>unknown</endtime>
+				</rngdates>
+			</timeinfo>
+			<current>publication date</current>
+		</timeperd>
+		<status>
+			<progress>Complete</progress>
+			<update>As needed</update>
+		</status>
+		<spdom>
+			<bounding>
+				<westbc Sync="TRUE">-81.518807</westbc>
+				<eastbc Sync="TRUE">-80.385311</eastbc>
+				<northbc Sync="TRUE">25.890134</northbc>
+				<southbc Sync="TRUE">24.848412</southbc>
+			</bounding>
+			<lboundng><leftbc Sync="TRUE">448029.978026</leftbc><rightbc Sync="TRUE">561575.134883</rightbc><bottombc Sync="TRUE">2748300.361374</bottombc><topbc Sync="TRUE">2863516.917398</topbc></lboundng></spdom>
+		<keywords>
+			<theme>
+				<themekt>None</themekt>
+				<themekey>National Park Service</themekey>
+				<themekey>Boundary</themekey>
+				<themekey>National Parks</themekey>
+				<themekey>NPS</themekey>
+				<themekey>Everglades National Park</themekey>
+				<themekey>Everglades</themekey>
+				<themekey>ENP</themekey>
+			</theme>
+			<place>
+				<placekt>None</placekt>
+				<placekey>Everglades National Park</placekey>
+				<placekey>National Park Service</placekey>
+			</place>
+		</keywords>
+		<accconst>None</accconst>
+		<useconst>To be used for display and general analysis purposes only.</useconst>
+		<ptcontac>
+			<cntinfo>
+				<cntperp>
+					<cntper>Danelle Malget</cntper>
+					<cntorg>Colorado State University, National Park Service</cntorg>
+				</cntperp>
+				<cntpos>GIS Specialist/Cooperator</cntpos>
+				<cntaddr>
+					<addrtype>mailing and physical address</addrtype>
+					<address>1201 Oakridge Drive Suite 200</address>
+					<city>Fort Collins</city>
+					<state>CO</state>
+					<postal>80525</postal>
+					<country>USA</country>
+				</cntaddr>
+				<cntvoice>970.225.3569</cntvoice>
+				<cntfax>970.225.3585</cntfax>
+				<cntemail>danelle_malget@partner.nps.gov</cntemail>
+				<hours>M-F 8-5 Mountain Time</hours>
+			</cntinfo>
+		</ptcontac>
+		<datacred>National Park Service</datacred>
+		<secinfo>
+			<secclass>Unclassified</secclass>
+		</secinfo>
+		<native Sync="TRUE">Microsoft Windows 2000 Version 5.1 (Build 2600) Service Pack 1; ESRI ArcCatalog 8.3.0.800</native>
+		<natvform Sync="TRUE">Shapefile</natvform></idinfo>
+	<dataqual>
+		<complete>Dataset is believed to be 100% complete. Please contact originator with corrections and updates.</complete>
+		<lineage>
+			<srcinfo>
+				<srccite>
+					<citeinfo>
+						<origin>Dean Tucker, Water Resource Division</origin>
+						<pubdate>Unpublished Material</pubdate>
+						<pubtime>Unknown</pubtime>
+						<title>NPSUnits</title>
+						<geoform>vector digital data</geoform>
+						<othercit>Park boundaries collected and digitized for the Horizon Project.</othercit>
+					</citeinfo>
+				</srccite>
+				<srctime>
+					<timeinfo>
+						<sngdate>
+							<caldate>unknown</caldate>
+							<time>unknown</time>
+						</sngdate>
+					</timeinfo>
+					<srccurr>publication date</srccurr>
+				</srctime>
+			</srcinfo>
+			<srcinfo>
+				<srccite>
+					<citeinfo>
+						<origin>David Duran</origin>
+						<pubdate>Unknown</pubdate>
+						<pubtime>Unknown</pubtime>
+						<title>ParkDave</title>
+						<geoform>vector digital data</geoform>
+						<othercit>Park boundaries collected from Parks and Regions in 2001.</othercit>
+					</citeinfo>
+				</srccite>
+				<srctime>
+					<timeinfo>
+						<sngdate>
+							<time>Unknown</time>
+						</sngdate>
+					</timeinfo>
+				</srctime>
+			</srcinfo>
+			<procstep>
+				<procdesc>
+Two sets of boundaries were collected and compared. The main set was obtained from David Duran, who collected boundaries from each region in the summer of 2001.  The second set was obtained from Dean Tucker, who digitized boundaries for the Horizon Project.
+
+The main set from David Duran was determined to contain the most recent boundary information. Parks missing from David's set were added from Deans set. Those parks are..........Antietam NB Arlington House,Benjamin Franklin NMEM, Big Hole NB, Catoctin Mountain Park, Chesapeake and Ohio Canal NHP, Chimney Rock NHS, Fort Point NHS, Fredericksburg NC, George Washington Memorial Parkway, Green Springs, Harpers Ferry NHP, International Peace Garden, John F. Kennedy Center for the Performing Arts, Kalaupapa NHP, Manassas NBP, McLoughlin House NHS, Monocacy NB, National Capital Parks - Central and East, Olympic NP, Prince William Forest Park, Rock Creek Park, San Francisco Maritime NHP, Thaddeus Kosciuszko NMEM, and Wolf Trap Farm Park for the Performing Arts. Park/Region staff were consulted for parks with major differences between the two sets.
+</procdesc>
+				<procdate>2002</procdate>
+				<proccont>
+					<cntinfo>
+						<cntperp>
+							<cntper>Danelle Malget</cntper>
+							<cntorg>Colorado State University, National Park Service</cntorg>
+						</cntperp>
+						<cntpos>GIS Specialist/Cooperator</cntpos>
+						<cntaddr>
+							<addrtype>mailing and physical address</addrtype>
+							<address>1201 Oakridge Drive Suite 200</address>
+							<city>Fort Collins</city>
+							<state>CO</state>
+							<postal>80525</postal>
+							<country>USA</country>
+						</cntaddr>
+						<cntvoice>970.225.3569</cntvoice>
+						<cntfax>970.225.3585</cntfax>
+						<cntemail>danelle_malget@partner.nps.gov</cntemail>
+						<hours>M-F 8-5 Mountain Time</hours>
+					</cntinfo>
+				</proccont>
+			</procstep>
+			<procstep><procdesc Sync="TRUE">Dataset copied.</procdesc><date Sync="TRUE">20021023</date><time Sync="TRUE">11063100</time></procstep><procstep><procdesc Sync="TRUE">Metadata imported.</procdesc><srcused Sync="TRUE">D:\WorkSpace\postedfall\npsboundary.shp.xml</srcused><date Sync="TRUE">20030313</date><time Sync="TRUE">11321700</time></procstep><procstep><procdesc>Boundaries were updated with data provided by National Parks or Regional Offices.</procdesc></procstep><procstep><procdesc Sync="TRUE">Dataset copied.</procdesc><srcused Sync="TRUE">d:\workspace\postspring\nps_boundary</srcused><date Sync="TRUE">20030313</date><time Sync="TRUE">13415100</time></procstep><procstep><proccont><cntinfo><cntperp><cntper>Mike Rugge</cntper><cntorg>Florida Coastal Everglades LTER</cntorg></cntperp><cntpos>Program Manager</cntpos><cntaddr><addrtype>mailing address</addrtype><address>Southeast Environmental Research Center
+					Florida International University
+					University Park, OE 148</address><city>Miami</city><state>FL</state><postal>33199</postal><country>USA</country></cntaddr><cntvoice>(305) 348-6054</cntvoice><cntfax>(305) 348-4096</cntfax></cntinfo></proccont><procdesc>The nps_boundary interchange file was converted to a coverage and then to a polyline shapefile (nps_boundary_line.shp).  The Everglades National Park boundary was selected from nps_boundary_line.shp and converted to a new shapefile.  The shapefile was reprojected to UTM, Zone 17, WGS84.</procdesc><procsv>ArcToolbox 8.3, ArcView 3.3</procsv><srcused>National Park Service - Park Boundaries</srcused><procdate>August 8, 2003</procdate></procstep></lineage>
+		<cloud>Unknown</cloud>
+	</dataqual>
+	<spdoinfo>
+		<direct Sync="TRUE">Vector</direct>
+		<ptvctinf>
+			<sdtsterm Name="enp_boundary_line">
+				<sdtstype Sync="TRUE">String</sdtstype>
+				<ptvctcnt Sync="TRUE">3</ptvctcnt>
+			</sdtsterm>
+			<esriterm Name="enp_boundary_line"><efeatyp Sync="TRUE">Simple</efeatyp><efeageom Sync="TRUE">Polyline</efeageom><esritopo Sync="TRUE">FALSE</esritopo><efeacnt Sync="TRUE">3</efeacnt><spindex Sync="TRUE">TRUE</spindex><linrefer Sync="TRUE">FALSE</linrefer></esriterm><esriterm Name="label"><efeatyp Sync="TRUE">Simple</efeatyp><efeageom Sync="TRUE">Label</efeageom><esritopo Sync="TRUE">FALSE</esritopo><efeacnt Sync="TRUE">0</efeacnt><spindex Sync="TRUE">FALSE</spindex><linrefer Sync="TRUE">FALSE</linrefer></esriterm><sdtsterm Name="label"><sdtstype Sync="TRUE">Label point</sdtstype><ptvctcnt Sync="TRUE">0</ptvctcnt></sdtsterm><esriterm Name="polygon"><efeatyp Sync="TRUE">Simple</efeatyp><efeageom Sync="TRUE">Polygon</efeageom><esritopo Sync="TRUE">TRUE</esritopo><efeacnt Sync="TRUE">2629</efeacnt><spindex Sync="TRUE">FALSE</spindex><linrefer Sync="TRUE">FALSE</linrefer></esriterm><sdtsterm Name="polygon"><sdtstype Sync="TRUE">GT-polygon composed of chains</sdtstype><ptvctcnt Sync="TRUE">2629</ptvctcnt></sdtsterm><esriterm Name="tic"><efeatyp Sync="TRUE">Simple</efeatyp><efeageom Sync="TRUE">Tic</efeageom><esritopo Sync="TRUE">FALSE</esritopo><efeacnt Sync="TRUE">4</efeacnt><spindex Sync="TRUE">FALSE</spindex><linrefer Sync="TRUE">FALSE</linrefer></esriterm><sdtsterm Name="tic"><sdtstype Sync="TRUE">Point</sdtstype><ptvctcnt Sync="TRUE">4</ptvctcnt></sdtsterm><esriterm Name="annotation.readme"><efeatyp Sync="TRUE"></efeatyp><efeageom Sync="TRUE">Annotation</efeageom><esritopo Sync="TRUE">FALSE</esritopo><efeacnt Sync="TRUE">0</efeacnt><spindex Sync="TRUE">FALSE</spindex><linrefer Sync="TRUE">FALSE</linrefer></esriterm><sdtsterm Name="annotation.readme"><sdtstype Sync="TRUE">Label point</sdtstype><ptvctcnt Sync="TRUE">0</ptvctcnt></sdtsterm><esriterm Name="region.park"><efeatyp Sync="TRUE">Simple</efeatyp><efeageom Sync="TRUE">Region</efeageom><esritopo Sync="TRUE">TRUE</esritopo><efeacnt Sync="TRUE">482</efeacnt><spindex Sync="TRUE">FALSE</spindex><linrefer Sync="TRUE">FALSE</linrefer></esriterm><sdtsterm Name="region.park"><sdtstype Sync="TRUE">Composite object</sdtstype><ptvctcnt Sync="TRUE">482</ptvctcnt></sdtsterm></ptvctinf>
+	</spdoinfo>
+	<spref>
+		<horizsys>
+			<geodetic>
+				<horizdn Sync="TRUE">D_WGS_1984</horizdn>
+				<ellips Sync="TRUE">WGS_1984</ellips>
+				<semiaxis Sync="TRUE">6378137.000000</semiaxis>
+				<denflat Sync="TRUE">298.257224</denflat>
+			</geodetic>
+			<cordsysn><geogcsn Sync="TRUE">GCS_WGS_1984</geogcsn><projcsn Sync="TRUE">WGS_1984_UTM_Zone_17N</projcsn></cordsysn><planar><planci><plance Sync="TRUE">coordinate pair</plance><plandu Sync="TRUE">meters</plandu><coordrep><absres Sync="TRUE">0.000256</absres><ordres Sync="TRUE">0.000256</ordres></coordrep></planci><gridsys><gridsysn Sync="TRUE">Universal Transverse Mercator</gridsysn><utm><utmzone Sync="TRUE">17</utmzone><transmer><sfctrmer Sync="TRUE">0.999600</sfctrmer><longcm Sync="TRUE">-81.000000</longcm><latprjo Sync="TRUE">0.000000</latprjo><feast Sync="TRUE">500000.000000</feast><fnorth Sync="TRUE">0.000000</fnorth></transmer></utm></gridsys></planar></horizsys>
+	</spref>
+	<eainfo>
+		<detailed Name="enp_boundary_line">
+			<enttyp>
+				<enttypl Sync="TRUE">enp_boundary_line</enttypl>
+				<enttypt Sync="TRUE">Feature Class</enttypt><enttypc Sync="TRUE">3</enttypc></enttyp>
+			<attr><attrlabl Sync="TRUE">FID</attrlabl><attalias Sync="TRUE">FID</attalias><attrtype Sync="TRUE">OID</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale><attrdef Sync="TRUE">Internal feature number.</attrdef><attrdefs Sync="TRUE">ESRI</attrdefs><attrdomv><udom Sync="TRUE">Sequential unique whole numbers that are automatically generated.</udom></attrdomv></attr><attr><attrlabl Sync="TRUE">Shape</attrlabl><attalias Sync="TRUE">Shape</attalias><attrtype Sync="TRUE">Geometry</attrtype><attwidth Sync="TRUE">0</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale><attrdef Sync="TRUE">Feature geometry.</attrdef><attrdefs Sync="TRUE">ESRI</attrdefs><attrdomv><udom Sync="TRUE">Coordinates defining the features.</udom></attrdomv></attr><attr><attrlabl Sync="TRUE">FNODE_</attrlabl><attalias Sync="TRUE">FNODE_</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">9</attwidth><atoutwid Sync="TRUE">5</atoutwid><attrdefs Sync="TRUE">ESRI</attrdefs><attrdomv><udom Sync="TRUE">Whole numbers that are automatically generated.</udom></attrdomv><attrdef>Internal node number for the beginning of an arc (from-node).</attrdef></attr><attr><attrlabl Sync="TRUE">TNODE_</attrlabl><attalias Sync="TRUE">TNODE_</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">9</attwidth><atoutwid Sync="TRUE">5</atoutwid><attrdef>Internal node number for the end of an arc (to-node).</attrdef><attrdefs Sync="TRUE">ESRI</attrdefs><attrdomv><udom Sync="TRUE">Whole numbers that are automatically generated.</udom></attrdomv></attr><attr><attrlabl Sync="TRUE">LPOLY_</attrlabl><attalias Sync="TRUE">LPOLY_</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">9</attwidth><atoutwid Sync="TRUE">5</atoutwid><attrdef>Internal node number for the left polygon.</attrdef><attrdefs Sync="TRUE">ESRI</attrdefs><attrdomv><udom Sync="TRUE">Whole numbers that are automatically generated.</udom></attrdomv></attr><attr><attrlabl Sync="TRUE">RPOLY_</attrlabl><attalias Sync="TRUE">RPOLY_</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">9</attwidth><atoutwid Sync="TRUE">5</atoutwid><attrdef>Internal node number for the right polygon.</attrdef><attrdefs Sync="TRUE">ESRI</attrdefs><attrdomv><udom Sync="TRUE">Whole numbers that are automatically generated.</udom></attrdomv></attr><attr><attrlabl Sync="TRUE">LENGTH</attrlabl><attalias Sync="TRUE">LENGTH</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">19</attwidth><atoutwid Sync="TRUE">18</atoutwid><atnumdec Sync="TRUE">3</atnumdec><attrdef>Length of feature in internal units.</attrdef></attr><attr><attrlabl Sync="TRUE">NPS_BNDRY_</attrlabl><attalias Sync="TRUE">NPS_BNDRY_</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">9</attwidth><atoutwid Sync="TRUE">5</atoutwid><attrdef>Internal feature number.</attrdef></attr><attr><attrlabl Sync="TRUE">NPS_BNDRID</attrlabl><attalias Sync="TRUE">NPS_BNDRID</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">9</attwidth><atoutwid Sync="TRUE">5</atoutwid><attrdef>User-defined feature number.</attrdef></attr><attr><attrlabl Sync="TRUE">OBJECTID</attrlabl><attwidth Sync="TRUE">19</attwidth><atoutwid Sync="TRUE">10</atoutwid><attrtype Sync="TRUE">Number</attrtype><atnumdec Sync="TRUE">3</atnumdec><attalias Sync="TRUE">OBJECTID</attalias></attr><attr><attrlabl Sync="TRUE">ACTIVE</attrlabl><attwidth Sync="TRUE">4</attwidth><atoutwid Sync="TRUE">4</atoutwid><attrtype Sync="TRUE">String</attrtype><attalias Sync="TRUE">ACTIVE</attalias></attr><attr><attrlabl Sync="TRUE">PARKNAME</attrlabl><attwidth Sync="TRUE">40</attwidth><atoutwid Sync="TRUE">40</atoutwid><attrtype Sync="TRUE">String</attrtype><attalias Sync="TRUE">PARKNAME</attalias><attrdef>Name of National Park</attrdef></attr><attr><attrlabl Sync="TRUE">ALPHACODE</attrlabl><attwidth Sync="TRUE">6</attwidth><atoutwid Sync="TRUE">6</atoutwid><attrtype Sync="TRUE">String</attrtype><attalias Sync="TRUE">ALPHACODE</attalias><attrdef>Four Letter code to Describe National Park</attrdef></attr><attr><attrlabl Sync="TRUE">DESIGNATIO</attrlabl><attwidth Sync="TRUE">40</attwidth><atoutwid Sync="TRUE">40</atoutwid><attrtype Sync="TRUE">String</attrtype><attalias Sync="TRUE">DESIGNATIO</attalias><attrdef>Designation of National Park</attrdef></attr><attr><attrlabl Sync="TRUE">ST</attrlabl><attwidth Sync="TRUE">2</attwidth><atoutwid Sync="TRUE">2</atoutwid><attrtype Sync="TRUE">String</attrtype><attalias Sync="TRUE">ST</attalias><attrdef>State in which park is located</attrdef></attr><attr><attrlabl Sync="TRUE">NOTES</attrlabl><attwidth Sync="TRUE">250</attwidth><atoutwid Sync="TRUE">250</atoutwid><attrtype Sync="TRUE">String</attrtype><attalias Sync="TRUE">NOTES</attalias><attrdef>Additional Information</attrdef></attr><attr><attrlabl Sync="TRUE">REGIONCODE</attrlabl><attwidth Sync="TRUE">254</attwidth><atoutwid Sync="TRUE">254</atoutwid><attrtype Sync="TRUE">String</attrtype><attrdef>Region (code) in which Park is located or managed</attrdef><attalias Sync="TRUE">REGIONCODE</attalias><attrdefs Sync="TRUE">ESRI</attrdefs><attrdomv><udom Sync="TRUE">Positive real numbers that are automatically generated.</udom></attrdomv></attr><attr><attrlabl Sync="TRUE">SHAPE_AREA</attrlabl><attwidth Sync="TRUE">19</attwidth><atoutwid Sync="TRUE">19</atoutwid><attrtype Sync="TRUE">Number</attrtype><atnumdec Sync="TRUE">3</atnumdec><attalias Sync="TRUE">SHAPE_AREA</attalias><attrdef Sync="TRUE">Area of feature in internal units squared.</attrdef><attrdefs Sync="TRUE">ESRI</attrdefs><attrdomv><udom Sync="TRUE">Positive real numbers that are automatically generated.</udom></attrdomv></attr><attr><attrlabl Sync="TRUE">SHAPE_LEN</attrlabl><attwidth Sync="TRUE">19</attwidth><atoutwid Sync="TRUE">19</atoutwid><attrtype Sync="TRUE">Number</attrtype><atnumdec Sync="TRUE">3</atnumdec><attalias Sync="TRUE">SHAPE_LEN</attalias></attr></detailed>
+		<overview>
+			<eaover>
+Attributes are as follows:
+Alphacode (4 letter code, unique to each park), ParkName, Designation, State, RegionCode (4 letter code, unique to each region).
+</eaover>
+		</overview>
+	</eainfo>
+	<distinfo>
+		<resdesc>Downloadable Data</resdesc>
+		<stdorder>
+			<digform>
+				<digtinfo>
+					<transize Sync="TRUE">0.029</transize>
+					<dssize Sync="TRUE">0.029</dssize></digtinfo>
+			</digform>
+		</stdorder>
+		<techpreq>Must have access to GIS software such as ESRI's ArcView or ArcInfo, or other compatible software, to view the data</techpreq>
+		<availabl>
+			<timeinfo>
+				<sngdate>
+					<caldate>20010301</caldate>
+					<time>unknown</time>
+				</sngdate>
+			</timeinfo>
+		</availabl>
+	</distinfo>
+	<metainfo>
+		<metd Sync="TRUE">20031114</metd>
+		<metc>
+			<cntinfo>
+				<cntperp>
+					<cntper>Mike Rugge</cntper>
+					<cntorg>Florida Coastal Everglades LTER</cntorg>
+				</cntperp>
+				<cntpos>Program Manager</cntpos>
+				<cntaddr>
+					<addrtype>mailing address</addrtype>
+					<address>Southeast Environmental Research Center
+					Florida International University
+					University Park, OE 148</address>
+					<city>Miami</city>
+					<state>FL</state>
+					<postal>33199</postal>
+					<country>USA</country>
+				</cntaddr>
+				<cntvoice>(305) 348-6054</cntvoice>
+				<cntfax>(305) 348-4096</cntfax>
+			</cntinfo>
+		</metc>
+		<metstdn Sync="TRUE">FGDC Content Standards for Digital Geospatial Metadata</metstdn>
+		<metstdv Sync="TRUE">FGDC-STD-001-1998</metstdv>
+		<mettc Sync="TRUE">local time</mettc>
+		<metac>None</metac>
+		<metuc>None</metuc>
+		<metsi>
+			<metsc>Unclassified</metsc>
+		</metsi>
+		<metextns>
+			<onlink>http://www.esri.com/metadata/esriprof80.html</onlink>
+			<metprof>ESRI Metadata Profile</metprof>
+		</metextns>
+		<langmeta Sync="TRUE">en</langmeta><metextns><onlink Sync="TRUE">http://www.esri.com/metadata/esriprof80.html</onlink><metprof Sync="TRUE">ESRI Metadata Profile</metprof></metextns></metainfo>
+	<Esri><CreaDate>20030811</CreaDate><CreaTime>09385400</CreaTime><SyncOnce>FALSE</SyncOnce><SyncDate>20031114</SyncDate><SyncTime>16490500</SyncTime><ModDate>20031114</ModDate><ModTime>16490500</ModTime><MetaID>{B5E80F4C-18B4-441E-B8C2-AC2030CBCB3A}</MetaID></Esri><dataIdInfo><envirDesc Sync="TRUE">Microsoft Windows 2000 Version 5.1 (Build 2600) Service Pack 1; ESRI ArcCatalog 8.3.0.800</envirDesc><dataLang><languageCode Sync="TRUE" value="en"></languageCode></dataLang><idCitation><resTitle Sync="TRUE">enp_boundary_line</resTitle><presForm><PresFormCd Sync="TRUE" value="005"></PresFormCd></presForm></idCitation><spatRpType><SpatRepTypCd Sync="TRUE" value="001"></SpatRepTypCd></spatRpType><geoBox esriExtentType="decdegrees"><westBL Sync="TRUE">-81.518807</westBL><eastBL Sync="TRUE">-80.385311</eastBL><northBL Sync="TRUE">25.890134</northBL><southBL Sync="TRUE">24.848412</southBL><exTypeCode Sync="TRUE">1</exTypeCode></geoBox><dataExt><geoEle><GeoBndBox esriExtentType="native"><westBL Sync="TRUE">448029.978026</westBL><eastBL Sync="TRUE">561575.134883</eastBL><northBL Sync="TRUE">2863516.917398</northBL><southBL Sync="TRUE">2748300.361374</southBL><exTypeCode Sync="TRUE">1</exTypeCode></GeoBndBox></geoEle></dataExt></dataIdInfo><mdLang><languageCode Sync="TRUE" value="en"></languageCode></mdLang><mdStanName Sync="TRUE">ISO 19115 Geographic Information - Metadata</mdStanName><mdStanVer Sync="TRUE">DIS_ESRI1.0</mdStanVer><mdChar><CharSetCd Sync="TRUE" value="004"></CharSetCd></mdChar><mdHrLv><ScopeCd Sync="TRUE" value="005"></ScopeCd></mdHrLv><mdHrLvName Sync="TRUE">dataset</mdHrLvName><distInfo><distributor><distorTran><onLineSrc><orDesc Sync="TRUE">002</orDesc><linkage Sync="TRUE">file://\\MRUGGE\GIS\Data for Mapserver\enp_boundary_line.shp</linkage><protocol Sync="TRUE">Local Area Network</protocol></onLineSrc><transSize Sync="TRUE">0.029</transSize></distorTran><distorFormat><formatName Sync="TRUE">Shapefile</formatName></distorFormat></distributor></distInfo><refSysInfo><RefSystem><refSysID><identCode Sync="TRUE">WGS_1984_UTM_Zone_17N</identCode></refSysID></RefSystem></refSysInfo><spatRepInfo><VectSpatRep><topLvl><TopoLevCd Sync="TRUE" value="001"></TopoLevCd></topLvl><geometObjs Name="enp_boundary_line"><geoObjTyp><GeoObjTypCd Sync="TRUE" value="001"></GeoObjTypCd></geoObjTyp><geoObjCnt Sync="TRUE">3</geoObjCnt></geometObjs></VectSpatRep></spatRepInfo><mdDateSt Sync="TRUE">20031114</mdDateSt></metadata>
