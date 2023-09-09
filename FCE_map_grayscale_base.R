@@ -13,13 +13,32 @@ ENP <- st_read("./shapefiles/enp_boundary_line.shp")
 FLstate <- st_read("./shapefiles/Florida_State_Boundary.shp")
 FLstate_inset <- st_read("./shapefiles/statebnd_poly.shp")
 canals <- st_read("./shapefiles/canals_utm.shp")
-FCEsites <- st_read("./shapefiles/ltersites_current_utm_one_pt_per_site.shp")
+FCEsites <- st_read("./shapefiles/ltersites_current_utm.shp")
 SRS <- st_read("./shapefiles/srs_utm_clipped.shp")
 TS <- st_read("./shapefiles/taylor_slough_utm_clipped.shp")
 roads <- st_read("./shapefiles/US41_US1.shp")
 Tamiami_bridges <- st_read("./shapefiles/Tamiami_trail_bridges.shp")
 CERP_projects_eastern_ENP <- st_read("./shapefiles/CERP_Project_Boundaries_ENP_east.shp")
 saltwater_east_2018 <- st_read("./shapefiles/InlandExtentOfSaltwater_2018.shp")
+
+# Select a subset of current FCE LTER sites to display on the map 
+FCEsites_subset <- filter(
+  FCEsites, 
+  SITE == "SRS-1d" |
+  SITE == "SRS-2" |
+  SITE == "SRS-3" |
+  SITE == "SRS-4" |
+  SITE == "SRS-5" |
+  SITE == "SRS-6" |
+  SITE == "TS/Ph-1a" |
+  SITE == "TS/Ph-2b" |
+  SITE == "TS/Ph-3" |
+  SITE == "TS/Ph-6b" |
+  SITE == "TS/Ph-7b" |
+  SITE == "TS/Ph-9" |
+  SITE == "TS/Ph-10" |
+  SITE == "TS/Ph-11" 
+)
 
 # Bounding coordinates are UTM Zone 17N and specify the map extent
 northing_max = 2852277
@@ -154,10 +173,10 @@ main_map <- tm_shape(FLstate, projection = 32617, bbox = c(easting_min,northing_
     labels = "Saltwater intrusion 2018",
     z = 9
   ) +
-  # Florida Coastal Everglades (FCE) LTER sites
+  # Subset of Florida Coastal Everglades (FCE) LTER sites
   # source: Florida Coastal Everglades LTER program
   # https://doi.org/10.6073/pasta/82c13533b7323a4a7f39934c752f0da0
-  tm_shape(FCEsites) +
+  tm_shape(FCEsites_subset) +
   tm_symbols(
     size=.25,
     shape = 19,
@@ -250,4 +269,4 @@ inset_map <- tm_shape(FLstate_inset, projection = 32617) +
 
 print(main_map, vp=viewport(x = 0.5, y = 0.5, width= 1, height= 1, just = c("center", "center")))
 print(inset_map, vp=viewport(x = 0.271, y = 0.865, width= 0.27, height= 0.28, just = c("center", "center")))
-# Might need to adject the position of the inset_map viewport, x lower = left, y higher = up
+# Might need to adjust the position of the inset_map viewport, x lower = left, y higher = up
