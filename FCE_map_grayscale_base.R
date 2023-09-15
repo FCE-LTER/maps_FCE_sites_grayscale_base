@@ -226,7 +226,7 @@ main_map <- tm_shape(FLstate, projection = 32617, bbox = c(easting_min,northing_
   
   tm_layout(
     bg.color = "#ffffff",
-    outer.margins = 0.0005,
+    outer.margins = 0.001,
     legend.show = TRUE,
     legend.text.size = 0.9,
     legend.position = c("left","bottom")
@@ -268,5 +268,5 @@ inset_map <- tm_shape(FLstate_inset, projection = 32617) +
   ) 
 
 print(main_map, vp=viewport(x = 0.5, y = 0.5, width= 1, height= 1, just = c("center", "center")))
-print(inset_map, vp=viewport(x = 0.271, y = 0.865, width= 0.27, height= 0.28, just = c("center", "center")))
+print(inset_map, vp=viewport(x = 0.237, y = 0.841, width= 0.33, height= 0.33, just = c("center", "center")))
 # Might need to adjust the position of the inset_map viewport, x lower = left, y higher = up
