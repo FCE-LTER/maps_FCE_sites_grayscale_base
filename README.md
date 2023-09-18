@@ -14,9 +14,11 @@ Initial maps were created in R. Affinity Designer was used to add the following 
 * Modified legend
 * Arrows showing freshwater and marine flow
 * Photos of habitats
+
  \
 Maps exported from R and Affinity Designer as png, EPS, and PDF files are in the exported_maps directory.
  \
+ 
 Please contact Mike Rugge ([ruggem\@fiu.edu)](mailto:ruggem@fiu.edu) with questions about the maps.
  \
  \
