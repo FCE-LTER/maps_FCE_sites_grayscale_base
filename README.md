@@ -13,11 +13,12 @@ Initial maps were created in R. Affinity Designer was used to add the following 
 * Labels for the Gulf of Mexico, Atlantic Ocean, Florida Bay, Biscayne bay, Tamiami Trail, US 1, Miami, Loop Current, and West Florida Shelf
 * Modified legend
 * Arrows showing freshwater and marine flow
-* Photos of habitats \
-
-Maps exported from R and Affinity Designer as png, EPS, and PDF files are in the exported_maps directory. \
-
-Please contact Mike Rugge ([ruggem\@fiu.edu)](mailto:ruggem@fiu.edu) with questions about the maps. \
+* Photos of habitats
+ \
+Maps exported from R and Affinity Designer as png, EPS, and PDF files are in the exported_maps directory.
+ \
+Please contact Mike Rugge ([ruggem\@fiu.edu)](mailto:ruggem@fiu.edu) with questions about the maps.
+ \
  \
 **FCE map created using the FCE_map_grayscale_base.R script**
  \
