@@ -4,7 +4,7 @@
 **FCE map created using the FCE_map_grayscale_base.R script**
  \
  \
-![](./images/FCE_map_grayscale_base_Rplot.png)
+![](./exported_maps/FCE_map_grayscale_base_Rplot.png)
  \
  \
  \
@@ -20,6 +20,6 @@ I used Affinity Designer to add the following elements to the FCE map created us
 **FCE map created using Affinity Designer**
  \
  \
-![](./images/FCE_map_grayscale_base_enhanced.png)
+![](./exported_maps/FCE_map_grayscale_base_enhanced.png)
   
 
