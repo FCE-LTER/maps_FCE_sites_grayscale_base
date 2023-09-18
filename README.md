@@ -8,13 +8,7 @@ Website: <https://fcelter.fiu.edu>\
 GitHub site: <https://github.com/FCE-LTER>
  \
  \
-**FCE map created using the FCE_map_grayscale_base.R script**
- \
- \
-![](./exported_maps/FCE_map_grayscale_base_Rplot.png)
- \
- \
- \
+
 Initial maps were created in R. Affinity Designer was used to add the following elements to map.
 
 * Site labels
@@ -25,9 +19,15 @@ Initial maps were created in R. Affinity Designer was used to add the following 
 
 Maps exported from R and Affinity Designer as png, EPS, and PDF files are in the exported_maps directory.\
 
-Please contact Mike Rugge ([ruggem\@fiu.edu)](mailto:ruggem@fiu.edu){.email} with questions about the maps.
-
+Please contact Mike Rugge ([ruggem\@fiu.edu)](mailto:ruggem@fiu.edu){.email} with questions about the maps.\
  \
+**FCE map created using the FCE_map_grayscale_base.R script**
+ \
+ \
+![](./exported_maps/FCE_map_grayscale_base_Rplot.png)
+ \
+ \
+
 **FCE map created using Affinity Designer**
  \
  \
