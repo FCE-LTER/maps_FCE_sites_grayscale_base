@@ -5,10 +5,8 @@ Information Manager: Gabriel Kamener ([gkamener\@fiu.edu](mailto:gkamener@fiu.ed
 Site Manager: Michael Rugge ([ruggem\@fiu.edu)](mailto:ruggem@fiu.edu){.email} \
 Lead Principal Investigator: John Kominoski ([jkominos\@fiu.edu](mailto:jkominos@fiu.edu){.email})\
 Website: <https://fcelter.fiu.edu>\
-GitHub site: <https://github.com/FCE-LTER>
+GitHub site: <https://github.com/FCE-LTER>\
  \
- \
-
 Initial maps were created in R. Affinity Designer was used to add the following elements to map.
 
 * Site labels
