@@ -1,9 +1,9 @@
 # FCE site map with a grayscale base layer
  \
 Organization: Florida Coastal Everglades LTER Program\
-Information Manager: Gabriel Kamener ([gkamener\@fiu.edu](mailto:gkamener@fiu.edu){.email})\
-Site Manager: Michael Rugge ([ruggem\@fiu.edu)](mailto:ruggem@fiu.edu){.email} \
-Lead Principal Investigator: John Kominoski ([jkominos\@fiu.edu](mailto:jkominos@fiu.edu){.email})\
+Information Manager: Gabriel Kamener ([gkamener\@fiu.edu](mailto:gkamener@fiu.edu))\
+Site Manager: Michael Rugge ([ruggem\@fiu.edu](mailto:ruggem@fiu.edu))\
+Lead Principal Investigator: John Kominoski ([jkominos\@fiu.edu](mailto:jkominos@fiu.edu))\
 Website: <https://fcelter.fiu.edu>\
 GitHub site: <https://github.com/FCE-LTER>\
  \
