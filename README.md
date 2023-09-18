@@ -25,7 +25,6 @@ Please contact Mike Rugge ([ruggem\@fiu.edu)](mailto:ruggem@fiu.edu){.email} wit
 ![](./exported_maps/FCE_map_grayscale_base_Rplot.png)
  \
  \
-
 **FCE map created using Affinity Designer**
  \
  \
