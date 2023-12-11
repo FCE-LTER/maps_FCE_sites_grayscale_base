@@ -14,17 +14,17 @@ Initial maps were created in R. Affinity Designer was used to add the following 
 * Modified legend
 * Arrows showing freshwater and marine flow
 * Photos of habitats
- \
+ 
 
 Maps exported from R and Affinity Designer as png, EPS, and PDF files are in the exported_maps directory.
- \
+ 
 
 Credits for the photos use in the map:
 
-* Freshwater marsh photo: Dr. Jessica Schedlbauer
-* Mangrove forests and estuaries photo: Dr. Stephen Davis, Everglades Foundation
-* Seagrass meadows photo: Jon Brucker, Florida Department of Environmental Protection
- \
+* [Freshwater marsh photo](https://fce-lter.fiu.edu/about/photos/?image_id=145): Dr. Jessica Schedlbauer
+* [Mangrove forests and estuaries photo](https://fce-lter.fiu.edu/about/photos/?image_id=325): Dr. Stephen Davis, Everglades Foundation
+* [Seagrass meadows photo](https://floridadep.gov/files/st-martins-marsh-aquatic-preserve-dep-staff-jon-brucker-turtlegras-medowjpg): Jon Brucker, Florida Department of Environmental Protection
+ 
  
 Please contact Mike Rugge ([ruggem\@fiu.edu)](mailto:ruggem@fiu.edu) with questions about the maps.
  \
