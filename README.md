@@ -14,9 +14,16 @@ Initial maps were created in R. Affinity Designer was used to add the following 
 * Modified legend
 * Arrows showing freshwater and marine flow
 * Photos of habitats
-
  \
+
 Maps exported from R and Affinity Designer as png, EPS, and PDF files are in the exported_maps directory.
+ \
+
+Credits for the photos use in the map:
+
+* Freshwater marsh photo: Dr. Jessica Schedlbauer
+* Mangrove forests and estuaries photo: Dr. Stephen Davis, Everglades Foundation
+* Seagrass meadows photo: Jon Brucker, Florida Department of Environmental Protection
  \
  
 Please contact Mike Rugge ([ruggem\@fiu.edu)](mailto:ruggem@fiu.edu) with questions about the maps.
