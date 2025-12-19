@@ -44,7 +44,7 @@ FCEsites_subset <- filter(
 northing_max = 2852277
 northing_min = 2748545
 easting_max = 582555
-easting_min = 461316
+easting_min = 450316
 
 tmap_mode("plot") 
 
@@ -268,5 +268,5 @@ inset_map <- tm_shape(FLstate_inset, projection = 32617) +
   ) 
 
 print(main_map, vp=viewport(x = 0.5, y = 0.5, width= 1, height= 1, just = c("center", "center")))
-print(inset_map, vp=viewport(x = 0.237, y = 0.841, width= 0.33, height= 0.33, just = c("center", "center")))
+print(inset_map, vp=viewport(x = 0.254, y = 0.841, width= 0.33, height= 0.33, just = c("center", "center")))
 # Might need to adjust the position of the inset_map viewport, x lower = left, y higher = up
