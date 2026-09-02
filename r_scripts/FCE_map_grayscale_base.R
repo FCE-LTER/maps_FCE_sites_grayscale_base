@@ -1,8 +1,16 @@
 library(tidyverse)
 library(sf)
-# NOTE: The script has been updated to work with tmap 4 and won't work with earlier versions of tmap.
+# NOTE: This script has been updated to work with tmap 4 and won't work with earlier versions of tmap.
 # Uncomment the line below to install the latest version of tmap.
 # install.packages("tmap")
+# Check for tmap 4.0 or higher
+if (packageVersion("tmap") < "4.0") {
+  stop(paste(
+    "This script has been updated to work with tmap tmap 4.0 or higher.\n",
+    "The current version of tmap is", packageVersion("tmap"), ".\n",
+    "Please update tmap by running: install.packages('tmap')"
+  ))
+}
 library(tmap)
 # install.packages("tmaptools")
 library(tmaptools)
@@ -62,14 +70,14 @@ tmap_mode("plot")
 # Comment out layers to remove them from the map
 main_map <- tm_shape(FLstate, bbox = bbox_map_extent) +
   tm_polygons(
-    col = "#f0f0f0",
-    border.col = "#525252"
+    fill = "#f0f0f0",
+    col = "#525252"
   ) +
   # Shark River Slough
   tm_shape(SRS) +
   tm_polygons(
-    col = "#969696",
-    border.col = "#969696"
+    fill = "#969696",
+    col = "#969696"
   ) +
   tm_add_legend(
     type = "polygons", 
@@ -84,8 +92,8 @@ main_map <- tm_shape(FLstate, bbox = bbox_map_extent) +
   # Taylor Slough
   tm_shape(TS) +
   tm_polygons(
-    col = "#cccccc",
-    border.col = "#cccccc"
+    fill = "#cccccc",
+    col = "#cccccc"
   ) +
   tm_add_legend(
     type = "polygons",
@@ -102,8 +110,8 @@ main_map <- tm_shape(FLstate, bbox = bbox_map_extent) +
   # https://hub.arcgis.com/datasets/8b529d03ce534b27addc573c4166ebd8_0/explore
   tm_shape(CERP_projects_eastern_ENP) +
   tm_polygons(
-    col = "#ffcc00",
-    border.col = "#cccccc"
+    fill = "#ffcc00",
+    col = "#cccccc"
   ) +
   tm_add_legend(
     type = "polygons", 
@@ -263,29 +271,29 @@ main_map <- tm_shape(FLstate, bbox = bbox_map_extent) +
 # Inset map in upper left corner
 inset_map <- tm_shape(FLstate_inset) +
   tm_polygons(
-    border.col = "#525252", 
-    col = "#f0f0f0", 
+    fill = "#f0f0f0",
+    col = "#525252",
     lwd = 0.5, 
     lty = "solid"
   ) + 
-  tm_shape(bbox_map_extent) +
+  tm_shape(
+    bbox_map_extent
+  ) +
   tm_polygons(
-    fill_alpha = 0, 
-    col_alpha = 1, 
-    col=NA,
-    border.col = "#000000", 
+    fill = NA,
+    col = "#000000", 
     lwd = 2, 
     lty = "solid"
   )  + 
   tm_title(
-    "FLORIDA"
+    "FLORIDA",
+    position = tm_pos_in("center", "TOP"),
+    size = 0.8
   )  +
   tm_layout(
     legend.show = FALSE, 
     bg.color = "#ffffff", 
-    title.size = 0.8, 
     inner.margins = 0.15, 
-    title.position = tm_pos_in("center", "TOP"), 
     frame = TRUE
   ) 
 
