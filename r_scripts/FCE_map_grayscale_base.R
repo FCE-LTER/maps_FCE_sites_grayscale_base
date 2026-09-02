@@ -1,5 +1,7 @@
 library(tidyverse)
 library(sf)
+# NOTE: The script has been updated to work with tmap 4 and won't work with earlier versions of tmap.
+# Uncomment the line below to install the latest version of tmap.
 # install.packages("tmap")
 library(tmap)
 # install.packages("tmaptools")
@@ -25,36 +27,44 @@ saltwater_east_2018 <- st_read("./shapefiles/InlandExtentOfSaltwater_2018.shp")
 FCEsites_subset <- filter(
   FCEsites, 
   SITE == "SRS-1d" |
-  SITE == "SRS-2" |
-  SITE == "SRS-3" |
-  SITE == "SRS-4" |
-  SITE == "SRS-5" |
-  SITE == "SRS-6" |
-  SITE == "TS/Ph-1a" |
-  SITE == "TS/Ph-2b" |
-  SITE == "TS/Ph-3" |
-  SITE == "TS/Ph-6b" |
-  SITE == "TS/Ph-7b" |
-  SITE == "TS/Ph-9" |
-  SITE == "TS/Ph-10" |
-  SITE == "TS/Ph-11" 
+    SITE == "SRS-2" |
+    SITE == "SRS-3" |
+    SITE == "SRS-4" |
+    SITE == "SRS-5" |
+    SITE == "SRS-6" |
+    SITE == "TS/Ph-1a" |
+    SITE == "TS/Ph-2b" |
+    SITE == "TS/Ph-3" |
+    SITE == "TS/Ph-6b" |
+    SITE == "TS/Ph-7b" |
+    SITE == "TS/Ph-9" |
+    SITE == "TS/Ph-10" |
+    SITE == "TS/Ph-11" 
 )
 
 # Bounding coordinates are UTM Zone 17N and specify the map extent
-northing_max = 2852277
-northing_min = 2748545
-easting_max = 582555
-easting_min = 450316
+northing_max = 2854277
+northing_min = 2747545
+easting_max = 584555
+easting_min = 440316
+
+# Calculate extent of the bounding box for the main map and the inset map in the upper left corner
+map_extent = matrix(c(easting_min,northing_min,easting_min,northing_max,easting_max,northing_max,easting_max,northing_min,easting_min,northing_min),ncol=2, byrow=TRUE)
+
+map_extent_coords = list(map_extent)
+
+bbox_map_extent <- st_polygon(map_extent_coords) %>%
+  st_sfc(crs = 32617)
 
 tmap_mode("plot") 
 
 # Plotting layers in the main map
 # Comment out layers to remove them from the map
-main_map <- tm_shape(FLstate, projection = 32617, bbox = c(easting_min,northing_min,easting_max,northing_max)) +
-  tm_polygons(col = "#f0f0f0",
-              alpha = NA,
-              border.col = "#525252",
-              border.alpha = NA) +
+main_map <- tm_shape(FLstate, bbox = bbox_map_extent) +
+  tm_polygons(
+    col = "#f0f0f0",
+    border.col = "#525252"
+  ) +
   # Shark River Slough
   tm_shape(SRS) +
   tm_polygons(
@@ -62,10 +72,13 @@ main_map <- tm_shape(FLstate, projection = 32617, bbox = c(easting_min,northing_
     border.col = "#969696"
   ) +
   tm_add_legend(
-    type = "fill", 
+    type = "polygons", 
+    fill = "#969696",
     col = "#969696",
-    border.col = "#969696",
     labels = "Shark River Slough",
+    item.height = 0.8,
+    item.space = 0,
+    item_text.margin = 0.6,
     z = 5 # position in the legend
   ) +
   # Taylor Slough
@@ -75,10 +88,13 @@ main_map <- tm_shape(FLstate, projection = 32617, bbox = c(easting_min,northing_
     border.col = "#cccccc"
   ) +
   tm_add_legend(
-    type = "fill", 
+    type = "polygons",
+    fill = "#cccccc",
     col = "#cccccc",
-    border.col = "#cccccc", 
     labels = "Taylor Slough",
+    item.height = 0.8,
+    item.space = 0,
+    item_text.margin = 0.6,
     z = 4
   ) +
   # CERP projects
@@ -90,11 +106,14 @@ main_map <- tm_shape(FLstate, projection = 32617, bbox = c(easting_min,northing_
     border.col = "#cccccc"
   ) +
   tm_add_legend(
-    type = "fill", 
-    col = "#ffcc00",
-    border.col = "#cccccc",
+    type = "polygons", 
+    fill = "#ffcc00",
+    col = "#cccccc",
     size = 1,
     labels = "CERP restoration projects",
+    item.height = 0.8,
+    item.space = 0,
+    item_text.margin = 0.6,
     z = 8
   ) +
   # Everglades National Park boundary
@@ -106,11 +125,14 @@ main_map <- tm_shape(FLstate, projection = 32617, bbox = c(easting_min,northing_
     lty = "dashed"
   ) +
   tm_add_legend(
-    type = "line", 
+    type = "lines", 
     lwd = 1.5,
     lty = "dashed",
     col = "#525252", 
     labels = "Everglades National Park",
+    item.height = 0.8,
+    item.space = 0,
+    item_text.margin = 0.6,
     z = 6
   ) +
   # US Highways (US1 and US 41 (AKA Tamiami Trail))
@@ -122,10 +144,13 @@ main_map <- tm_shape(FLstate, projection = 32617, bbox = c(easting_min,northing_
     lty = "solid"
   ) +
   tm_add_legend(
-    type = "line", 
+    type = "lines", 
     lwd = 1.5, 
     col = "#cc0000", 
     labels = "US Highways",
+    item.height = 0.8,
+    item.space = 0,
+    item_text.margin = 0.6,
     z = 2
   ) +
   # Tamiami Trail bridges 
@@ -137,10 +162,13 @@ main_map <- tm_shape(FLstate, projection = 32617, bbox = c(easting_min,northing_
     lty = "solid"
   ) +
   tm_add_legend(
-    type = "line", 
+    type = "lines", 
     lwd = 6, 
     col = "#ffff00", 
     labels = "Tamiami Trail bridges",
+    item.height = 0.8,
+    item.space = 0,
+    item_text.margin = 0.6,
     z = 7
   ) +
   # Major canals
@@ -152,10 +180,13 @@ main_map <- tm_shape(FLstate, projection = 32617, bbox = c(easting_min,northing_
     lty = "solid"
   ) +
   tm_add_legend(
-    type = "line", 
+    type = "lines", 
     lwd = 0.75, 
     col = "#0000cc", 
     labels = "Canals",
+    item.height = 0.8,
+    item.space = 0,
+    item_text.margin = 0.6,
     z = 1
   ) +
   # Approximate inland extent of saltwater interface in the Biscayne aquifer in 2018, Miami-Dade County
@@ -167,106 +198,97 @@ main_map <- tm_shape(FLstate, projection = 32617, bbox = c(easting_min,northing_
     lty = "solid"
   ) +
   tm_add_legend(
-    type = "line", 
+    type = "lines", 
     lwd = 3, 
     col = "#00cccc", 
     labels = "Saltwater intrusion 2018",
+    item.height = 0.8,
+    item.space = 0,
+    item_text.margin = 0.6,
     z = 9
   ) +
   # Subset of Florida Coastal Everglades (FCE) LTER sites
   # source: Florida Coastal Everglades LTER program
   # https://doi.org/10.6073/pasta/82c13533b7323a4a7f39934c752f0da0
   tm_shape(FCEsites_subset) +
-  tm_symbols(
-    size=.25,
+  tm_dots(
+    fill = "#000000",
+    size = 0.5
+  ) +
+  tm_add_legend(
+    type = "symbols", 
+    size=.5,
     shape = 19,
-    col = "#000000"
+    fill = "#000000", 
+    labels = "FCE sites",
+    item.height = 0.8,
+    item.space = 0,
+    item_text.margin = 0.6,
+    z = 0,
+    bg.alpha = 0
   ) +
   # Graticules along the left and bottom of the map
   tm_graticules(
     lines = FALSE, 
     labels.size = 0.8
-  ) +
-  tm_add_legend(
-    type = "symbol", 
-    size=.25,
-    shape = 19,
-    col = "#000000", 
-    labels = "FCE sites",
-    z = 0
-  ) +
+  )  +
   tm_compass(
     north = 0,
-    type = NA,
+    type = "arrow",
     text.size = 1.2,
     size = NA,
-    show.labels = 1,
-    cardinal.directions = c("N", "E", "S", "W"),
-    text.color = NA,
-    color.dark = NA,
-    color.light = NA,
-    lwd = 1,
-    position = NA,
-    bg.color = NA,
-    bg.alpha = NA,
-    just = NA
+    position = tm_pos_in(pos.h = 0.87, pos.v = 0.3)
   ) +
-  tm_scale_bar(
-    width = 0.15,
+  tm_scalebar(
+    breaks = seq(0, 20, by = 5),
     text.size = 0.8,
-    text.color = NA,
-    color.dark = "black",
-    color.light = "white",
+    text.color = "#000000", 
+    color.dark = "#000000",
+    color.light = "#FFFFFF",
     lwd = 1,
-    position = NA,
+    position = tm_pos_in(pos.h = 0.77, pos.v = 0.11),
     bg.color = NA,
-    bg.alpha = NA,
-    just = NA
+    bg.alpha = NA
   ) +
   
   tm_layout(
     bg.color = "#ffffff",
     outer.margins = 0.001,
+    inner.margins = 0.02,
     legend.show = TRUE,
-    legend.text.size = 0.9,
-    legend.position = c("left","bottom")
+    legend.text.size = 0.85,
+    legend.position = tm_pos_in("left","bottom")
   ) 
 
-# Calculate extent of the bounding box for the inset map in the upper left corner
-map_extent = matrix(c(easting_min,northing_min,easting_min,northing_max,easting_max,northing_max,easting_max,northing_min,easting_min,northing_min),ncol=2, byrow=TRUE)
-
-map_extent_coords = list(map_extent)
-
-bbox_map_extent <- st_polygon(map_extent_coords) %>%
-  st_sfc(crs = 32617)
-
 # Inset map in upper left corner
-inset_map <- tm_shape(FLstate_inset, projection = 32617) +
+inset_map <- tm_shape(FLstate_inset) +
   tm_polygons(
     border.col = "#525252", 
     col = "#f0f0f0", 
     lwd = 0.5, 
     lty = "solid"
   ) + 
-  tm_shape(bbox_map_extent, projection = 32617) +
+  tm_shape(bbox_map_extent) +
   tm_polygons(
-    alpha = 0, 
-    border.alpha = 1, 
+    fill_alpha = 0, 
+    col_alpha = 1, 
     col=NA,
     border.col = "#000000", 
     lwd = 2, 
     lty = "solid"
   )  + 
+  tm_title(
+    "FLORIDA"
+  )  +
   tm_layout(
-    "FLORIDA", 
     legend.show = FALSE, 
     bg.color = "#ffffff", 
-    title.size = 0.9, 
-    inner.margins = 0.1, 
-    title.position = c("center", "TOP"), 
+    title.size = 0.8, 
+    inner.margins = 0.15, 
+    title.position = tm_pos_in("center", "TOP"), 
     frame = TRUE
   ) 
 
 print(main_map, vp=viewport(x = 0.5, y = 0.5, width= 1, height= 1, just = c("center", "center")))
-print(inset_map, vp=viewport(x = 0.254, y = 0.841, width= 0.33, height= 0.33, just = c("center", "center")))
+print(inset_map, vp=viewport(x = 0.212, y = 0.841, width= 0.33, height= 0.33, just = c("center", "center")))
 # Might need to adjust the position of the inset_map viewport, x lower = left, y higher = up
