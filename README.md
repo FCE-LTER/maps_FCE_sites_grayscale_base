@@ -7,8 +7,8 @@ Lead Principal Investigator: John Kominoski ([jkominos\@fiu.edu](mailto:jkominos
 Website: <https://fcelter.fiu.edu>\
 GitHub site: <https://github.com/FCE-LTER>\
  \
- Map license: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)\
- Map credit: Mike Rugge, Florida Coastal Everglades LTER, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)\
+Map license: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)\
+Map credit: Mike Rugge, Florida Coastal Everglades LTER, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)\
  \
  Please credit the photographers below if using a version of the map with photos:
 
@@ -16,6 +16,8 @@ GitHub site: <https://github.com/FCE-LTER>\
 * [Mangrove forests and estuaries photo](https://fce-lter.fiu.edu/about/photos/?image_id=325): Dr. Stephen Davis, Everglades Foundation
 * [Seagrass meadows photo](https://floridadep.gov/files/st-martins-marsh-aquatic-preserve-dep-staff-jon-brucker-turtlegras-medowjpg): Jon Brucker, Florida Department of Environmental Protection
 
+**Update:** The R script used to create the map has been updated to support **tmap v4**. 
+The R script will no longer work with tmap v3. <i>(September 2, 2026)</i>
 
 Initial maps were created in R. Affinity Designer was used to add the following elements to map.
 
