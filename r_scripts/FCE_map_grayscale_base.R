@@ -289,6 +289,6 @@ inset_map <- tm_shape(FLstate_inset) +
     frame = TRUE
   ) 
 
-print(main_map, vp=viewport(x = 0.5, y = 0.5, width= 1, height= 1, just = c("center", "center")))
-print(inset_map, vp=viewport(x = 0.212, y = 0.841, width= 0.33, height= 0.33, just = c("center", "center")))
+print(main_map, vp=viewport(x = 0.5, y = 0.5, width= 1, height= 0.98, just = c("center", "center")))
+print(inset_map, vp=viewport(x = 0.221, y = 0.830, width= 0.33, height= 0.33, just = c("center", "center")))
 # Might need to adjust the position of the inset_map viewport, x lower = left, y higher = up
