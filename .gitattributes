@@ -1,4 +1,4 @@
-exported_maps/*.eps linguist-detectable=false
-exported_maps/*.pdf linguist-detectable=false
-exported_maps/*.png linguist-detectable=false
-shapefiles/* linguist-detectable=false
+exported_maps/*.eps linguist-vendored
+exported_maps/*.pdf linguist-vendored
+exported_maps/*.png linguist-vendored
+shapefiles/* linguist-vendored
