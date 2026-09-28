@@ -64,6 +64,9 @@ map_extent_coords = list(map_extent)
 bbox_map_extent <- st_polygon(map_extent_coords) %>%
   st_sfc(crs = 32617)
 
+# Make sure that there isn't a box or frame around the legend
+tmap_options(legend.frame = FALSE)
+
 tmap_mode("plot") 
 
 # Plotting layers in the main map
@@ -285,7 +288,7 @@ inset_map <- tm_shape(FLstate_inset) +
     col = "#000000", 
     lwd = 2, 
     lty = "solid"
-  ) + 
+  )  + 
   tm_title(
     "FLORIDA",
     position = tm_pos_in("center", "TOP"),
