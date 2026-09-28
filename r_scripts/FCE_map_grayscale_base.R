@@ -280,11 +280,12 @@ inset_map <- tm_shape(FLstate_inset) +
     bbox_map_extent
   ) +
   tm_polygons(
-    fill = NA,
+    fill = "#ffffff",
+    fill_alpha = 0,
     col = "#000000", 
     lwd = 2, 
     lty = "solid"
-  )  + 
+  ) + 
   tm_title(
     "FLORIDA",
     position = tm_pos_in("center", "TOP"),
